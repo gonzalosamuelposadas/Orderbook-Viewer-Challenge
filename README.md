@@ -14,6 +14,23 @@ A web application that displays the orderbook of different Binance cryptocurrenc
 
 ## How to run the project
 
+### Setup environment variables
+
+Before running the project, configure your environment variables:
+
+```bash
+# Copy the example env file
+cp .env.local.example .env.local
+```
+
+The `.env.local` file should contain:
+
+```bash
+NEXT_PUBLIC_BINANCE_API_URL=https://api.binance.com/api/v3
+```
+
+**Note:** The Binance API URL is public and doesn't require authentication. You can use the default value or modify it if needed.
+
 ### Option 1: With Docker (recommended)
 
 ```bash
